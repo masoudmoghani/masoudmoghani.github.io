@@ -59,6 +59,55 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
+
+            <tr onmouseout="sufia_stop()" onmouseover="sufia_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sufia_video'><video  width=100% muted autoplay loop>
+                  <source src="images/SuFIA.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/SuFIA.svg' width="160" id='sufia_image'>
+                </div>
+                <script type="text/javascript">
+                  function sufia_start() {
+                    document.getElementById('sufia_video').style.opacity = "1";
+                    document.getElementById('sufia_image').style.opacity = "0";
+                  }
+      
+                  function sufia_stop() {
+                    document.getElementById('sufia_video').style.opacity = "0";
+                    document.getElementById('sufia_image').style.opacity = "1";
+                  }
+                  sufia_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://orbit-surgical.github.io/sufia">
+                  <span class="papertitle">SuFIA: Language-Guided Augmented Dexterity for Robotic Surgical Assistants</span>
+                </a>
+                <br>
+                <strong>Masoud Moghani</strong>,
+                Lars Doorenbos,
+                William Chung-Ho Panitch,<br>
+                Sean Huver,
+                Mahdi Azizian,
+                Ken Goldberg,
+                Animesh Garg
+                <br>
+                <em>(Under review)</em>, 2024
+                <br>
+                <a href="https://orbit-surgical.github.io/sufia">website</a>
+                /
+                <a href="https://youtu.be/ZfZJd4ENny8">video</a>
+                <p></p>
+                <p>
+                  SuFIA, a framework for natural language-guided augmented dexterity for robotic surgical assistants.
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="orbitsurgical_stop()" onmouseover="orbitsurgical_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -104,10 +153,10 @@
                 <br>
                 <a href="https://orbit-surgical.github.io/">website</a>
                 /
-                <a href="https://youtu.be/4DWBX0Pq0R0">video</a>
+                <a href="https://youtu.be/NA3xCRHcZsE">video</a>
                 <p></p>
                 <p>
-                ORBIT-Surgical, a physics-based surgical robot simulation framework with photorealistic rendering for the da Vinci Research Kit (dVRK) surgical robot.
+                ORBIT-Surgical, a physics-based surgical robot simulation framework with photorealistic rendering.
                 </p>
               </td>
             </tr>
@@ -135,7 +184,7 @@
                 Animesh Garg,
                 Ken Goldberg
                 <br>
-                <em>Journal of Medical Robotics Research</em>, 2023
+                <em>Journal of Medical Robotics Research (JMRR)</em>, 2023
                 <br>
                 <a href="https://sites.google.com/berkeley.edu/ravsi">website</a>
                 /
@@ -258,7 +307,7 @@
                 <br>
                 MIE404H1 - Control Systems I (Co-lecturer, 2x - Head TA)
                 <br>
-                ECE470H1 - Robot Modeling and Control (TA)
+                ECE470H1 - Robot Modeling and Control (2x - TA)
                 <br>
                 MIE505H1 - Micro/Nano Robotics (TA)
                 <br>
