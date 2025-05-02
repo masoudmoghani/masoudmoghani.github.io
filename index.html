@@ -60,7 +60,56 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
+
+
+            <tr onmouseout="adapt3r_stop()" onmouseover="adapt3r_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="position: relative; transform: translateY(10%)">
+                  <div class="two" id='adapt3r_video'><video  width=100% muted autoplay loop>
+                  <source src="images/Adapt3R-vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/Adapt3R.jpg' width="160" id='adapt3r_image'>
+                </div>
+                <script type="text/javascript">
+                  function adapt3r_start() {
+                    document.getElementById('adapt3r_video').style.opacity = "1";
+                    document.getElementById('adapt3r_image').style.opacity = "0";
+                  }
+      
+                  function adapt3r_stop() {
+                    document.getElementById('adapt3r_video').style.opacity = "0";
+                    document.getElementById('adapt3r_image').style.opacity = "1";
+                  }
+                  adapt3r_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.pair.toronto.edu/Adapt3R/">
+                  <span class="papertitle">Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning</span>
+                </a>
+                <br>
+                Albert Wilcox,
+                Mohamed Ghanem,
+                <strong>Masoud Moghani</strong>,
+                Pierre Barroso,<br>
+                Benjamin Joffe,
+                Animesh Garg
+                <br>
+                <em><strong>Preprint 2025</strong></em>
+                <br>
+                <a href="https://www.pair.toronto.edu/Adapt3R/">website</a>
+                /
+                <a href="https://arxiv.org/abs/2503.04877">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2503.04877">pdf</a>
+                <p></p>
+                <p>
+                  Adapt3R, an imitation learning algorithm utilizing 3D scene representations to enable zero-shot transfer to novel embodiments and camera poses.
+                </p>
+              </td>
+            </tr>
+
 
             <tr onmouseout="sufia_bc_stop()" onmouseover="sufia_bc_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -104,6 +153,10 @@
                 <a href="https://orbit-surgical.github.io/sufia-bc/">website</a>
                 /
                 <a href="https://youtu.be/jCvZYf0saRo">video</a>
+                /
+                <a href="https://arxiv.org/abs/2504.14857">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2504.14857">pdf</a>
                 <p></p>
                 <strong>Media Coverage:</strong>
                 <a href="https://developer.nvidia.com/blog/advancing-surgical-robotics-with-ai-driven-simulation-and-digital-twin-technology/">NVIDIA Developer</a>
