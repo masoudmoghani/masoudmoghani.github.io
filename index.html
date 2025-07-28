@@ -62,6 +62,55 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="cobalt_stop()" onmouseover="cobalt_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cobalt_video' style="left: 65px;"><video  width=120 muted autoplay loop>
+                  <source src="images/Cobalt.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/Cobalt.jpg' width="250" id='cobalt_image'>
+                </div>
+                <script type="text/javascript">
+                  function cobalt_start() {
+                    document.getElementById('cobalt_video').style.opacity = "1";
+                    document.getElementById('cobalt_image').style.opacity = "0";
+                  }
+
+                  function cobalt_stop() {
+                    document.getElementById('cobalt_video').style.opacity = "0";
+                    document.getElementById('cobalt_image').style.opacity = "1";
+                  }
+                  cobalt_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://cobalt-teleop.github.io/">
+                  <span class="papertitle">COBALT: Crowdsourcing Robot Learning via Cloud-Based Teleoperation with Smartphones</span>
+                </a>
+                <br>
+                Ayush Agarwal<sup>*</sup>,
+                Ansh Gandhi<sup>*</sup>,
+                Jeremy A Collins,
+                Omar Rayyan,
+                Aryan Sarswat,
+                Ranjani Koushik,
+                Kaavya Menon,
+                <strong>Masoud Moghani</strong>,
+                Ajay Mandlekar,
+                Animesh Garg
+                <br>
+                <a href="https://cobalt-teleop.github.io/">website</a>
+                /
+                <a href="https://youtu.be/vdlnIP0cmCY">video</a>
+                <p></p>
+                <p>
+                  COBALT democratizes robot learning by letting hundreds of users worldwide teleoperate cloud-hosted, vectorized simulators via everyday devices.
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="adapt3r_stop()" onmouseover="adapt3r_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="position: relative; transform: translateY(10%)">
@@ -106,6 +155,58 @@
                 <p></p>
                 <p>
                   Adapt3R, an imitation learning algorithm utilizing 3D scene representations to enable zero-shot transfer to novel embodiments and camera poses.
+                </p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="sonogym_stop()" onmouseover="sonogym_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sonogym_video'><video  width=250 muted autoplay loop>
+                  <source src="images/SonoGym.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/SonoGym.jpg' width="250" id='sonogym_image'>
+                </div>
+                <script type="text/javascript">
+                  function sonogym_start() {
+                    document.getElementById('sonogym_video').style.opacity = "1";
+                    document.getElementById('sonogym_image').style.opacity = "0";
+                  }
+
+                  function sonogym_stop() {
+                    document.getElementById('sonogym_video').style.opacity = "0";
+                    document.getElementById('sonogym_image').style.opacity = "1";
+                  }
+                  sonogym_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sonogym.github.io/">
+                  <span class="papertitle">SonoGym: High Performance Simulation for Challenging Surgical Tasks with Robotic Ultrasound</span>
+                </a>
+                <br>
+                Yunke Ao,
+                <strong>Masoud Moghani</strong><sup>*</sup>,
+                Mayank Mittal<sup>*</sup>,
+                Manish Prajapat,
+                Luohong Wu,
+                Frederic Giraud,
+                Fabio Carrillo,
+                Andreas Krause,
+                Philipp Fürnstahl
+                <br>
+                <em><strong>Preprint 2025</strong></em>
+                <br>
+                <a href="https://sonogym.github.io/">website</a>
+                /
+                <a href="https://arxiv.org/abs/2507.01152">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2507.01152">pdf</a>
+                <p></p>
+                <p>
+                  SonoGym, a scalable simulation platform to train robots for orthopedic surgery.
                 </p>
               </td>
             </tr>
