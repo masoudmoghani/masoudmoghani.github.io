@@ -62,6 +62,50 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="isaaclab_stop()" onmouseover="isaaclab_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="position: relative; transform: translateY(10%)">
+                  <div class="two" id='isaaclab_video'><video  width=250 muted autoplay loop>
+                  <source src="images/IsaacLab.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/isaaclab.jpg' width="250" id='isaaclab_image'>
+                </div>
+                <script type="text/javascript">
+                  function isaaclab_start() {
+                    document.getElementById('isaaclab_video').style.opacity = "1";
+                    document.getElementById('isaaclab_image').style.opacity = "0";
+                  }
+      
+                  function isaaclab_stop() {
+                    document.getElementById('isaaclab_video').style.opacity = "0";
+                    document.getElementById('isaaclab_image').style.opacity = "1";
+                  }
+                  isaaclab_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://isaac-sim.github.io/IsaacLab/main/index.html">
+                  <span class="papertitle">Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning</span>
+                </a>
+                <br>
+                NVIDIA
+                <br>
+                <em><strong>arXiv 2025</strong></em>
+                <br>
+                <a href="https://isaac-sim.github.io/IsaacLab/main/index.html">website</a>
+                /
+                <a href="https://arxiv.org/abs/2511.04831">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2511.04831">pdf</a>
+                <p></p>
+                <p>
+                  Isaac Lab empowers large-scale, multi-modal learning through GPU-native robotics simulation.
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="cobalt_stop()" onmouseover="cobalt_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -212,14 +256,32 @@
             </tr>
 
 
-            <tr>
+            <tr onmouseout="suturebot_stop()" onmouseover="suturebot_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/SutureBot.png' width="250" id='suturebot_image'>
+                <div class="one">
+                  <div class="two" id='suturebot_video'><video  width=250 muted autoplay loop>
+                  <source src="images/SutureBot.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/SutureBot.png' width="250" id='suturebot_image'>
+                </div>
+                <script type="text/javascript">
+                  function suturebot_start() {
+                    document.getElementById('suturebot_video').style.opacity = "1";
+                    document.getElementById('suturebot_image').style.opacity = "0";
+                  }
+      
+                  function suturebot_stop() {
+                    document.getElementById('suturebot_video').style.opacity = "0";
+                    document.getElementById('suturebot_image').style.opacity = "1";
+                  }
+                  suturebot_stop()
+                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <!-- <a href=""> -->
+                <a href="https://suturebot.github.io/">
                   <span class="papertitle">SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing</span>
-                <!-- </a> -->
+                </a>
                 <br>
                 Jesse Haworth<sup>*</sup>, 
                 Juo-Tung Chen<sup>*</sup>, 
