@@ -62,8 +62,27 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-            <tr>
+            <tr onmouseout="softmimicgen_stop()" onmouseover="softmimicgen_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='softmimicgen_video' style="left: 32px;"><video  width=185 muted autoplay loop>
+                  <source src="images/SoftMimicGen.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/SoftMimicGen.png' width="250" id='softmimicgen_image'>
+                </div>
+                <script type="text/javascript">
+                  function softmimicgen_start() {
+                    document.getElementById('softmimicgen_video').style.opacity = "1";
+                    document.getElementById('softmimicgen_image').style.opacity = "0";
+                  }
+      
+                  function softmimicgen_stop() {
+                    document.getElementById('softmimicgen_video').style.opacity = "0";
+                    document.getElementById('softmimicgen_image').style.opacity = "1";
+                  }
+                  softmimicgen_stop()
+                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://softmimicgen.github.io/">
@@ -170,6 +189,8 @@
                 Ajay Mandlekar,
                 Animesh Garg
                 <br>
+                <em><strong>ICRA 2026</strong>: IEEE International Conference on Robotics and Automation</em>, 2026
+                <br>
                 <a href="https://cobalt-teleop.github.io/">website</a>
                 /
                 <a href="https://youtu.be/vdlnIP0cmCY">video</a>
@@ -267,7 +288,7 @@
                 Andreas Krause,
                 Philipp Fürnstahl
                 <br>
-                <em><strong>NeurIPS 2025 D&B</strong>: NeurIPS Datasets and Benchmarks</em>, 2025
+                <em><strong>NeurIPS 2025</strong>: NeurIPS Datasets and Benchmarks</em>, 2025
                 <br>
                 <a href="https://sonogym.github.io/">website</a>
                 /
@@ -317,7 +338,7 @@
                 Chelsea Finn,
                 Axel Krieger
                 <br>
-                <em><strong>NeurIPS 2025 D&B</strong>: NeurIPS Datasets and Benchmarks</em>, 2025
+                <em><strong>NeurIPS 2025</strong>: NeurIPS Datasets and Benchmarks</em>, 2025
                 <br>
                 <p></p>
                 <p>
