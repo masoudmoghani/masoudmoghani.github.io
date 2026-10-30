@@ -62,6 +62,115 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="simfoundry_stop()" onmouseover="simfoundry_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='simfoundry_video'><video  width=250 muted autoplay loop>
+                  <source src="images/SimFoundry.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/SimFoundry.png' width="250" id='simfoundry_image'>
+                </div>
+                <script type="text/javascript">
+                  function simfoundry_start() {
+                    document.getElementById('simfoundry_video').style.opacity = "1";
+                    document.getElementById('simfoundry_image').style.opacity = "0";
+                  }
+      
+                  function simfoundry_stop() {
+                    document.getElementById('simfoundry_video').style.opacity = "0";
+                    document.getElementById('simfoundry_image').style.opacity = "1";
+                  }
+                  simfoundry_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://research.nvidia.com/labs/gear/simfoundry/">
+                  <span class="papertitle">SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation</span>
+                </a>
+                <br>
+                Nadun Ranawaka<sup>*</sup>,
+                Josiah Wong<sup>*</sup>,
+                Wei-Lin Pai,
+                Wei-Teng Chu,
+                Tianyuan Dai,
+                <strong>Masoud Moghani</strong>,
+                Hang Yin,
+                Yunfan Jiang,
+                Wesley Durbano<sup>*</sup>,
+                Brandon Huynh<sup>*</sup>,
+                Yu Fang,
+                Danfei Xu,
+                Ruohan Zhang,
+                Li Fei-Fei,
+                Linxi Fan,
+                Bowen Wen,
+                Ajay Mandlekar<sup>&dagger;</sup>,
+                Yuke Zhu<sup>&dagger;</sup>
+                <br>
+                <em><strong>CoRL 2026</strong>: Conference on Robot Learning</em>, 2026
+                <br>
+                <a href="https://research.nvidia.com/labs/gear/simfoundry/">website</a>
+                /
+                <a href="https://arxiv.org/abs/2606.28276">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2606.28276">pdf</a>
+                <p></p>
+                <p>
+                  SimFoundry turns a single real-world video into an interactive simulation environment for scalable policy training and evaluation.
+                </p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="keygen_stop()" onmouseover="keygen_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="position: relative; transform: translateY(10%)">
+                  <div class="two" id='keygen_video'><video  width=250 muted autoplay loop>
+                  <source src="images/KeyGen.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/KeyGen.jpg' width="250" id='keygen_image'>
+                </div>
+                <script type="text/javascript">
+                  function keygen_start() {
+                    document.getElementById('keygen_video').style.opacity = "1";
+                    document.getElementById('keygen_image').style.opacity = "0";
+                  }
+      
+                  function keygen_stop() {
+                    document.getElementById('keygen_video').style.opacity = "0";
+                    document.getElementById('keygen_image').style.opacity = "1";
+                  }
+                  keygen_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://robo-keygen.github.io/">
+                  <span class="papertitle">KeyGen: Unsupervised Keypoint based Object-Centric Representations for Category-Level Policy Generalization</span>
+                </a>
+                <br>
+                Shuxin Cao,
+                Liquan Wang,
+                <strong>Masoud Moghani</strong>,
+                Benjamin Joffe,
+                Animesh Garg
+                <br>
+                <em><strong>IROS 2026</strong>: IEEE/RSJ International Conference on Intelligent Robots and Systems</em>, 2026
+                <br>
+                <a href="https://robo-keygen.github.io/">website</a>
+                /
+                <a href="https://arxiv.org/abs/2609.28818">paper</a>
+                /
+                <a href="https://arxiv.org/pdf/2609.28818">pdf</a>
+                <p></p>
+                <p>
+                  KeyGen learns semantic 3D keypoints as object-centric representations for manipulation policies that generalize to unseen object instances.
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="softmimicgen_stop()" onmouseover="softmimicgen_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
